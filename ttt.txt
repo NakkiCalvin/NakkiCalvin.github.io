@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>RETRO WAVE</title>
+</head>
+
+<body>
+<!--   
+<div class="jumbotron text-center">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>
+ -->
+<!-- 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Column 3</h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>  -->
+
+
+  <div class="header" > <!--Верх(Bar)-->
+    <div class="header2"><!--Шапка(Header)-->
+      <img src="logo.png" alt="TV-Wiki">
+            <a class="menu_active" href="index.html">HOME PAGE</a>
+            <a class="menu" href="list.html">TV-SHOWS</a>
+            <a class="menu" href="contacts.html">OUR CONTACTS</a>
+            <a class="menu" href="faq.html">FAQ</a>
+      </div>
+</div>
+
+  <div class="center"> <!--главный div(Grid)-->
+
+    <div class="slides">
+      <ul> <!-- Слайды -->
+          <li><img src="Supergirl.jpg" alt="Supergirl" class="slideimg">
+              <div>Supergirl (Супергерл)</div>
+          </li>
+          <li><img src="JessicaJones.jpg" alt="Jessica Jones" class="slideimg">
+              <div>Jessica Jones (Джессика Джонс)</div>
+          </li>
+        <li><img src="Arrow.jpg" alt="Arrow" class="slideimg">
+              <div>Arrow (Стрела)</div>
+          </li>
+          <li><img src="Flash.jpg" alt="Flash" class="slideimg">
+              <div>The Flash (Флэш)</div>
+          </li>
+      </ul>
+  </div>
+  
+  </div>
+</div>
+<div class="center center-text">
+<div class="titles">BEST TV-SHOWS </div>
+</div>
+
+</body>
+
+</html>

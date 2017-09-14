@@ -1,0 +1,17 @@
+
+  tabl{
+    margin: 50px 0;
+    text-align: left;
+    border-collapse: separate;
+    border: 1px solid #ddd;
+    border-spacing: 10px;
+    border-radius: 3px;
+    background: #fdfdfd;
+    font-size: 14px;
+    width: auto;
+  }
+  NAME{
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 3px;
+  }
