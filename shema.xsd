@@ -1,0 +1,19 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="tabl">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="TV" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="NAME"/>
+              <xs:element type="xs:string" name="RUSSIAN"/>
+              <xs:element type="xs:string" name="YEAR"/>
+              <xs:element type="xs:string" name="SEASONS"/>
+              <xs:element type="xs:string" name="STATUS"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

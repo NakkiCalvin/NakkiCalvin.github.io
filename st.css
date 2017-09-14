@@ -2,3 +2,33 @@
     width: 50%;
     margin-left: 80px auto;
 }
+
+.navbar.navbar-inverse.navbar-fixed-top { 
+opacity: 0.9; 
+}
+
+.nav.navbar-nav li a {
+   color: #FF00FF !important;
+ }
+
+.nav.navbar-nav a:hover {
+ color: grey !important;
+}
+
+.navbar-inverse .navbar-header .navbar-brand {
+	color: #FF1493;
+}
+
+.dropdown .dropdown-menu {
+	background: black;
+	
+}
+
+body { 
+	padding-top: 50px; 
+	background-image: url(bcgr.jpg); 
+    background-position: right top; 
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
