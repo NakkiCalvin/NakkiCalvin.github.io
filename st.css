@@ -24,11 +24,20 @@ opacity: 0.9;
 	
 }
 
+
+
 body { 
 	padding-top: 50px; 
 	background-image: url(bcgr.jpg);
     background-position: fixed;
     background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: 100% auto;
+	background-size: cover;
 }
+
+@media (max-width: 767px) {
+			body {
+				background-image: url(Flash.jpg);
+			}
+
+	}
