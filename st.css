@@ -29,7 +29,7 @@ opacity: 0.9;
 body { 
 	padding-top: 50px; 
 	background-image: url(bcgr.jpg);
-    background-position: fixed;
+    background-position: center center;
     background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -37,7 +37,7 @@ body {
 
 @media (max-width: 767px) {
 			body {
-				background-image: url(Flash.jpg);
+				background-image: url(bcgr.jpg);
 			}
 
 	}
