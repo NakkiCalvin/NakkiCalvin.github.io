@@ -19,20 +19,37 @@ opacity: 0.9;
 	color: #FF1493;
 }
 
+.navbar-inverse .navbar-header .navbar-brand:hover {
+	color: white;
+}
+
 .dropdown .dropdown-menu {
 	background: black;
 	
 }
 
-
-
 body { 
-	padding-top: 50px; 
+	padding-top: 55px; 
 	background-image: url(bcgr.jpg);
     background-position: center center;
     background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
+}
+
+.ff {
+	background: rgba(255,0,255,0.01);
+	
+}
+
+#ffid {
+	background: rgba(148,0,211,0.4);
+	color: black;
+}
+
+.imp {
+	margin-left: 20px;
+	
 }
 
 @media (max-width: 767px) {
