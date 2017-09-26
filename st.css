@@ -50,7 +50,7 @@ body {
 
 @media (max-width: 767px) {
 			body {
-				background-image: url(wp.jpg);
+				background-image: url(scale.jpg);
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-attachment: fixed;
