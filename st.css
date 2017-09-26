@@ -47,6 +47,19 @@ body {
 	color: black;
 }
 
+ li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+
+   
+    .affix {
+      top: 0;
+      width: 100%;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
 
 @media (max-width: 767px) {
 			body {
