@@ -25,7 +25,6 @@ opacity: 0.9;
 
 .dropdown .dropdown-menu {
 	background: black;
-	
 }
 
 body { 
@@ -35,11 +34,11 @@ body {
     background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
+	font-family: "Open Sans",  Impact;
 }
 
 .ff {
 	background: rgba(255,0,255,0.01);
-	
 }
 
 #ffid {
@@ -47,19 +46,62 @@ body {
 	color: black;
 }
 
- li {
-    list-style-type: none; /* Убираем маркеры */
-   }
+li {
+   list-style-type: none; /* Убираем маркеры */
+}
 
    
-    .affix {
-      top: 0;
-      width: 100%;
-  }
+.affix {
+    top: 0;
+    width: 100%;
+}
 
-  .affix + .container-fluid {
-      padding-top: 70px;
+.affix + .container-fluid {
+    padding-top: 70px;
+}
+
+#bglogo {
+	background: rgba(128,128,128,0.4);
+	color: black;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+.area {
+  text-align: center;
+  font-size: 6.5em;
+  color: #fff;
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur .75s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+  float: left; margin-left: 350px;
+}
+
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
   }
+}
 
 @media (max-width: 767px) {
 			body {
@@ -69,5 +111,21 @@ body {
 				background-attachment: fixed;
 				background-size: cover;
 			}
+			.area {
+  text-align: left;
+  font-size: 4.5em;
+  color: #fff;
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur .75s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+  float: left; margin-left: 50px;
+}
+.forcenter {
+	margin-left: 50px;
+}
 
 	}
+	
+@font-face {font-family: DJGROSS; src: url(DJGROSS.ttf);}
