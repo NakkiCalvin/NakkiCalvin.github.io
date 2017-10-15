@@ -85,6 +85,7 @@ div { display: block;}
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-attachment: fixed;
+				z-index: -1;
 				background-size: cover;
 				font-family: "Open Sans",  Impact;
 			}
