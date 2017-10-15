@@ -80,12 +80,12 @@ div { display: block;}
 .carousel.slide.thumbnail {background-color:black;}
 
 
-@media (max-width: 767px) {
+@media (max-width: 400px) {
 			body {
-				background-image: url(scale1n.jpg);
+				background-image: url(scale1.jpg);
 				background-position: center center;
 				background-repeat: no-repeat;
-				background-attachment: fixed;
+				
 				background-size: cover;
 				font-family: "Open Sans",  Impact;
 			}
