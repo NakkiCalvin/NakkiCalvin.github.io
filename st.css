@@ -34,7 +34,7 @@ body {
     background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	font-family: "Open Sans",  Impact;
+	font-family: Open Sans;
 }
 
 .ff {
@@ -61,7 +61,7 @@ li {
 }
 
 #bglogo {
-	background: rgba(0,0,0,0.4);
+	background: rgba(0,0,0,0.8);
 	color: black;
 }
 
@@ -87,7 +87,7 @@ div { display: block;}
 				background-repeat: no-repeat;
 				background-attachment: fixed;
 				background-size: cover;
-				font-family: "Open Sans",  Impact;
+				font-family: Open Sans;
 			}
 }
 
