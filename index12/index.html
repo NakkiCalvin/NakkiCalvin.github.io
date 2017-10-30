@@ -12,6 +12,113 @@
 
 <link rel="stylesheet" type="text/css" href="st.css">
 
+	<style>
+
+		.image-effect-fall-back{
+			width: 500px;
+			height: 300px;
+			position: relative;
+			margin: 0 auto;
+			-webkit-perspective: 800px;
+			perspective: 800px;
+		}
+
+
+		.image-effect-fall-back .image-layer{
+			position: absolute;
+			top:0;
+			left: 0;
+			height: 300px;
+			-webkit-transition: 0.6s;
+			transition: 0.6s;
+			z-index: 1;
+		}
+
+		.image-effect-fall-back:hover .image-layer{
+			-webkit-transform: rotateX(70deg);
+			transform: rotateX(70deg);
+			overflow: visible;
+		}
+
+		.image-effect-fall-back .image-layer img{
+			height: 100%;
+		}
+
+		.image-effect-fall-back .image-layer:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.5);
+			box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+			opacity: 0;
+
+			-webkit-transition: all 0.5s;
+			transition: all 0.5s;
+			-webkit-transform: rotateX(114deg) translateZ(-26px)  translateY(110px) scale(0.75);
+			transform: rotateX(114deg) translateZ(-26px)  translateY(110px) scale(0.75);
+			-webkit-transform-origin: bottom;
+			-ms-transform-origin: bottom;
+			transform-origin: bottom;
+		}
+
+		.image-effect-fall-back:hover .image-layer:before {
+			opacity: 0.3;
+		}
+
+
+		.image-effect-fall-back .share-layer{
+			position: absolute;
+			bottom: 100px;
+			left: 0;
+			width: 100%;
+			height: 100px;
+			opacity: 0;
+			z-index: 10;
+			
+			-webkit-transition: 0.6s;
+			transition: 0.6s;
+			
+			-webkit-transform: rotateX(70deg);
+			transform: rotateX(70deg);
+		}
+
+		.image-effect-fall-back:hover .share-layer {
+			opacity: 1;
+
+			-webkit-transform: rotateX(0deg) translateY(-70px);
+			transform: rotateX(0deg) translateY(-70px);
+		}
+
+
+		.share-button{
+			display: inline-block;
+			text-decoration: none;
+			color: #ffffff;
+			padding: 12px;
+			width: 80px;
+			border-radius: 2px;
+			margin:	25px 10px;
+		}
+
+		.share-via-facebook{
+			background-color:#3b5998;
+		}
+
+		.share-via-twitter{
+			background-color:#00aced;
+		}
+
+		.share-via-google{
+			background-color:#d34836;
+		}
+
+	</style>
+
+
+
 </head>
 <body>
 
@@ -32,14 +139,14 @@
 		<!-- items -->
 		<div class="collapse navbar-collapse" id="mainNavBar">
 			<ul class="nav navbar-nav">
-				<li><a href="index.html">Home</a></li>
-				<!--	<li><a href="#">Games</a></li> -->
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="#">Games</a></li>
 				<li><a href="index1.html">Music</a></li>
 				<!-- drop down -->
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Catigories <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li class="active"><a href="index2.html">Films</a></li>
+						<li><a href="index2.html">Films</a></li>
 						<li><a href="index3.html">Music</a></li>
 						<li><a href="index4.html">Cake</a></li>
 					</ul>
@@ -122,6 +229,7 @@
 		<div style="color: white; background: rgba(0,0,0,0.8);" class="col-md-8 content">
 			<div>
 				<div class="forlines">
+				
 		<img src="hm1.gif" alt="hm2" class="img-responsive img-thumbnail" width="230" height="230"/>
 		<blockquote><p>Синтвейв (англ. Synthwave), также известный под названиями Ретровейв (англ. Retrowave), Futuresynth или Outrun (в честь эстетики одноимённой игры)[1] — стиль электронной музыки, появившийся в середине 2000-х годов в США</p></blockquote>
 			
@@ -214,12 +322,42 @@
       </ul>
   </div>
   </div>
-  
-  
+
+
+<!-- PIROJENOE -->   
+ 
+ 	<div class="image-effect-fall-back">
+
+		<div class="share-layer">
+
+			<a href="#" class="share-button share-via-facebook">
+				<i class="fa fa-facebook"></i>
+				Facebook
+			</a>
+
+			<a href="#" class="share-button share-via-twitter">
+				<i class="fa fa-twitter"></i>
+				Twitter
+			</a>
+
+			<a href="#" class="share-button share-via-google">
+				<i class="fa fa-google"></i>
+				Google +
+			</a>
+
+		</div>
+
+		<div class="image-layer">
+			<img src="8.jpg" alt="">
+		</div>
+
+	</div>
+
+ 
  
   
 <div class="container-fluid">
-<div >NEW RETRO WAVE </div>
+<div ><a class="notes" href="list.xml">list</a></div>
 </div>
 
 </body>

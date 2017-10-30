@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="tabl.xsl"?>
 <tabl>
 
-<TV>
+<MTV>
   <NAME>Supergirl
   </NAME>
   <RUSSIAN>Супердевушка(Супергёрл)
@@ -13,8 +13,8 @@
   </SEASONS>
   <STATUS>Продолжается
   </STATUS>
-</TV>
-<TV>
+</MTV>
+<MTV>
   <NAME>Marvel’s Jessica Jones
   </NAME>
   <RUSSIAN>Джессика Джонс
@@ -25,8 +25,8 @@
   </SEASONS>
   <STATUS>Продожается
   </STATUS>
-</TV>
-<TV>
+</MTV>
+<MTV>
   <NAME>Arrow
   </NAME>
   <RUSSIAN>Стрела
@@ -37,8 +37,8 @@
   </SEASONS>
   <STATUS>Продолжается
   </STATUS>
-</TV>
-<TV>
+</MTV>
+<MTV>
   <NAME>The Flash
   </NAME>
   <RUSSIAN>Флэш
@@ -49,5 +49,5 @@
   </SEASONS>
   <STATUS>Продолжается
   </STATUS>
-</TV>
+</MTV>
 </tabl>

@@ -27,15 +27,20 @@ opacity: 0.9;
 	background: black;
 }
 
+.dropdown .active a { background-color: rgba(160,32,240,0.5);}
+.dropdown .active a:hover { background-color: white;}
+
 body { 
-	padding-top: 55px; 
+	padding-top: 51px; 
 	background-image: url(bcgr.jpg);
     background-position: center center;
     background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	font-family: Open Sans;
+	font-family: Lazer84;
 }
+
+blockquote {font-family: Arial;}
 
 .ff {
 	background: rgba(0,0,0,0.01);
@@ -79,17 +84,29 @@ div { display: block;}
 
 .carousel.slide.thumbnail {background-color:black;}
 
+.notes{
+   text-decoration: none;
+   font-size: 60px;
+   font-style:Lazer84;
+   color: white;
+   text-align: left;
+   padding-left: inherit;
+ }
 
 @media screen and (max-width: 767px) {
 			body {
-				background-image: url(scale1.jpg);
+			/*    background-image: url(scale1.jpg);   */
+			
+				background: rgb(0,0,0);
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-attachment: fixed;
 				background-size: cover;
-				font-family: Open Sans;
+				font-family: Lazer84;
 			}
 }
 
 	
 @font-face {font-family: DJGROSS; src: url(DJGROSS.ttf);}
+@font-face {font-family: Lazer84; src: url(Lazer84.ttf);}
+

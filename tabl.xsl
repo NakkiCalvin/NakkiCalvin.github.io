@@ -4,17 +4,17 @@
 
   <html>
   <body bgcolor="lightgrey">
-  <h2 align="center">Список сериалов</h2>
+  <h2 align="center">Список музыки</h2>
   <table border="3" align="center">
   <tr bgcolor="white">
   <th>Оригинальное название</th>
 	<th>Русское название</th>
 	<th>Год</th>
-	<th>Количество сезонов</th>
+	<th>Количество проданных копий</th>
 	<th>Статус</th>
   </tr>
   
-   <xsl:for-each select="tabl/TV">
+   <xsl:for-each select="tabl/MTV">
    <tr bgcolor="lightblue">
    <td><xsl:value-of select="NAME"/></td>
    <td><xsl:value-of select="RUSSIAN"/></td>

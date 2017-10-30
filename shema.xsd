@@ -2,7 +2,7 @@
   <xs:element name="tabl">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="TV" maxOccurs="unbounded" minOccurs="0">
+        <xs:element name="MTV" maxOccurs="unbounded" minOccurs="0">
           <xs:complexType>
             <xs:sequence>
               <xs:element type="xs:string" name="NAME"/>

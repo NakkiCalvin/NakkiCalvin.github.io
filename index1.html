@@ -12,6 +12,135 @@
 
 <link rel="stylesheet" type="text/css" href="st.css">
 
+	<style>
+
+		.image-effect-fall-back{
+			width: 500px;
+			height: 300px;
+			position: relative;
+			margin: 0 auto;
+			-webkit-perspective: 800px;
+			perspective: 800px;
+		}
+
+
+		.image-effect-fall-back .image-layer{
+			position: absolute;
+			top:0;
+			left: 0;
+			height: 300px;
+			-webkit-transition: 0.6s;
+			transition: 0.6s;
+			z-index: 1;
+		}
+
+		.image-effect-fall-back:hover .image-layer{
+			-webkit-transform: rotateX(70deg);
+			transform: rotateX(70deg);
+			overflow: visible;
+		}
+
+		.image-effect-fall-back .image-layer img{
+			height: 100%;
+		}
+
+		.image-effect-fall-back .image-layer:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.5);
+			box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+			opacity: 0;
+
+			-webkit-transition: all 0.5s;
+			transition: all 0.5s;
+			-webkit-transform: rotateX(114deg) translateZ(-26px)  translateY(110px) scale(0.75);
+			transform: rotateX(114deg) translateZ(-26px)  translateY(110px) scale(0.75);
+			-webkit-transform-origin: bottom;
+			-ms-transform-origin: bottom;
+			transform-origin: bottom;
+		}
+
+		.image-effect-fall-back:hover .image-layer:before {
+			opacity: 0.3;
+		}
+
+
+		.image-effect-fall-back .share-layer{
+			position: absolute;
+			bottom: 100px;
+			left: 0;
+			width: 100%;
+			height: 100px;
+			opacity: 0;
+			z-index: 10;
+			
+			-webkit-transition: 0.6s;
+			transition: 0.6s;
+			
+			-webkit-transform: rotateX(70deg);
+			transform: rotateX(70deg);
+		}
+
+		.image-effect-fall-back:hover .share-layer {
+			opacity: 1;
+
+			-webkit-transform: rotateX(0deg) translateY(-70px);
+			transform: rotateX(0deg) translateY(-70px);
+		}
+
+
+		.share-button{
+			display: inline-block;
+			text-decoration: none;
+			color: #ffffff;
+			padding: 12px;
+			width: 95px;
+			border-radius: 2px;
+			margin:	25px 20px;
+		}
+
+		.share-via-facebook{
+			background-color:#3b5998;
+		}
+
+		.share-via-twitter{
+			background-color:#00aced;
+		}
+
+		.share-via-google{
+			background-color:#d34836;
+		}
+
+	</style>
+<script>
+
+function pr()
+    {
+	  var ansver = "NEVIBRANO NICHEGO!!!!";
+      var szElement="";
+      szElement="Cтудент: " + first.text2.value + " " + first.text3.value + ". Cпециальность: " + first.spec.value + ". Курс: " + first.k.value;  
+	  var subj = ". Предметы: ";
+  
+   if(document.first.OIT.checked == false && document.first.OAIP.checked == false && document.first.OAIP.checked == false && document.first.ALOCVM.checked == false && document.first.PHYSIC.checked == false && document.first.MATH.checked == false ) { alert(ansver); }
+   else {
+   if(document.first.OIT.checked == true){subj += " ОИТ; "}
+   if(document.first.OAIP.checked == true){subj += " ОАИП; "}
+   if(document.first.ALOCVM.checked == true){subj += " АЛОЦВМ; "}
+   if(document.first.PHYSIC.checked == true){subj += " ФИЗИКА; "}
+   if(document.first.MATH.checked == true){subj += " МАТЕМАТИКА; "}
+	
+  alert(szElement+subj);  
+}
+  
+    }
+
+</script>
+
+
 </head>
 <body>
 
@@ -27,21 +156,21 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-			<a href="index.html" class="navbar-brand">RetroWave</a>
+			<a href="index.html" class="navbar-brand"><span class="glyphicon glyphicon-fire"></span>RetroWave</a>
 		</div>
 		<!-- items -->
 		<div class="collapse navbar-collapse" id="mainNavBar">
 			<ul class="nav navbar-nav">
 				<li><a href="index.html">Home</a></li>
-				<li class="active"><a href="#">Games</a></li>
-				<li><a href="#">Music</a></li>
+		<!--	<li><a href="#">Games</a></li> -->
+				<li class="active"><a href="index1.html">Music</a></li>
 				<!-- drop down -->
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Catigories <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="#">Films</a></li>
-						<li><a href="#">Music</a></li>
-						<li><a href="#">Cake</a></li>
+						<li><a href="index2.html">Films</a></li>
+						<li><a href="index3.html">Music</a></li>
+						<li><a href="index4.html">Cake</a></li>
 					</ul>
 				</li>
 				
@@ -54,142 +183,87 @@
 
 
   <div class="container-fluid"> <!--Верх(Bar)-->
-    <div class="row" id="bglogo"><!--Шапка(Header)-->
-      <img src="logonwe.png"/>
+    <div align="center" class="row" id="bglogo"><!--Шапка(Header)-->
+      <img  src="logonwe.png" class="img-responsive"/>
     </div>
 </div>  
-
-	
-	
-	 <!--  GGGGGGGGGGGGGGGGGGGGGGGGGGG -->
-  <div style="padding-top: 4px;" class="container">
-  <!-- <h2 align="center" style="background: rgba(128,128,128,0.4); color: rgb(238,130,238); -webkit-text-stroke: 2px black; border: 4px solid black; font-family: impact; font-size:50px;">Ретро культура 80ых</h2>  -->
-  <div id="myCarousel" class="carousel slide thumbnail" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-
-      <div class="item active">
-        <img src="caru.jpg" alt="Fight" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>Культура и Мода</h3>
-          <p>Люди под влиянием данной культуры, одевались как можно ярче, что бы выделиться на фоне других</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="caru2.jpg" alt="Move" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>Far Cry 3 Blood Dragon</h3>
-          <p>Кульутра ретро начала проявлятся в игровой индустрии</p>
-        </div>
-      </div>
-    
-      <div class="item">
-        <img src="caru3.jpg" alt="Fast" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>Ретро музыка</h3>
-          <p>Данной культуре характера ярко розовые оттенки, смешанные с синим свечением. Электронные технологии и неоновые дороги.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-
-<!-- GGGGGGGGGGGGG -->
   
  <!-- ROWS -->
-  <div class="container-fluid">
-	<div class="row">
-		<div style="display: inline-block; color: white; background: rgba(0,0,0,0.5);" class="col-md-12 content">
-			<div>
-				<div class="forlines">
-		<img src="hm1.gif" alt="hm2" class="img-responsive img-thumbnail" width="230" height="230"/>
-		<blockquote><p>Синтвейв (англ. Synthwave), также известный под названиями Ретровейв (англ. Retrowave), Futuresynth или Outrun (в честь эстетики одноимённой игры)[1] — стиль электронной музыки, появившийся в середине 2000-х годов в США</p></blockquote>
-			
-			</div>
-		</div>
-	</div>
-	
-	<div style="display: inline-block; color: white; background: rgba(0,0,0,0.4);" class="col-md-12 content">
-			<div>
-				<div class="forlines">
-		<img src="hm2.gif" alt="hm2" class="img-responsive img-thumbnail" width="230" height="230"/>
-		<blockquote><p>С музыкальной точки зрения синтвейв вдохновлён нью вейвом, а также саундтреками многих фильмов, видеоигр и телевизионных шоу 1980-х годов[5][6][7]. В качестве источника вдохновения упоминают таких композиторов, как Джон Карпентер и Вангелис, группу Tangerine Dream[2][8]. Этот стиль преимущественно инструментальный и использует в звучании характерные элементы электронной музыки 1980-х, электронные барабаны, «gated reverb (англ.)русск.», мелодии и бас-партии, сыгранные на аналоговых синтезаторах. Всё делается для достижения сходства с электронной музыкой тех лет[8]. Несмотря на это, синтвейв-продюсеры также используют современные техники создания электронной музыки, такие как сайдчейн-компрессия, и обычно выводят бас-барабан и бас-партию на передний план, что свойственно современной электронной музыке (например, электро-хаусу). С эстетической точки зрения синтвейв разворачивается в ретрофутуристической перспективе, воссоздавая дух научной фантастики, боевиков, фильмов ужасов, футуристических видеоигр-гонок 1980-х[9]. Отмечается его родственность с киберпанком. Синтвейв выражает ностальгию по культуре 1980-х, пытается уловить атмосферу тех лет и погрузить в неё.</p></blockquote>
-			
-			</div>
-		</div>
-	</div>
-	
-	<div style="display: inline-block; color: white; background: rgba(0,0,0,0.4);" class="col-md-12 content">
-			<div>
-				<div class="forlines">
-		<img src="hm3.gif" alt="hm2" class="img-responsive img-thumbnail" width="230" height="230"/>
-		<blockquote><p>Киберпространство (англ. cyberspace) — метафорическая абстракция, используемая в философии и в компьютерных технологиях, является (виртуальной) реальностью, которая представляет Ноосферу [1]. Второй мир как «внутри» компьютеров, так и «внутри» компьютерных сетей.</p></blockquote>
-			
-			</div>
-		</div>
-	</div>
-	
-	<div style="display: inline-block; color: white; background: rgba(0,0,0,0.4);" class="col-md-12 content">
-			<div>
-				<div class="forlines">
-		<img src="hm4.gif" alt="hm2" class="img-responsive img-thumbnail" width="230" height="230"/>
-		<blockquote><p>Киберпространство не следует путать с реальным Интернетом. Этот термин часто используют для описания объектов, широко распространённых в компьютерной сети; например, веб-сайт может быть метафорически описан как «находящийся в киберпространстве». Используя такую интерпретацию, можно сказать, что интернет-события не происходят в странах или городах, в которых физически находятся серверы или участники, а происходят в киберпространстве. Это станет разумным взглядом на вещи в тот момент, когда распределённые сервисы станут широко использоваться, когда личность и местоположение участников сети будет невозможно определить из-за анонимной или псевдоанонимной связи. Станет невозможно применять законы каждого штата и каждой страны в киберпространстве.
+  <div align="center" style="margin: 100px; background: rgba(0,0,0,0.7);">
+<form name="first" onsubmit="alert('Данные отправлены');return false">
 
-Кроме того, что обычные люди уже не так критично относятся к фантастике, которая постепенно начинает входить в нашу жизнь, успех метафоры «киберпространство» в большей части заключён в разделении профессии «Компьютерный программист» на мелкие части.</p></blockquote>
-			
-			</div>
+<textarea>Факультет Инормационных Технологий</textarea><p>
+
+<input type="text" name="text2" value="Фамилия" />
+
+<p><input type="text" name="text3" value="Имя" /></p>
+				
+				<p> 
+				<b> Специальность: </b> 
+				<select name="spec">
+					<option value="ПОИТ">ПОИТ</option>
+					<option value="ИСиТ">ИСиТ</option>
+					<option value="ДЭВИ">ДЭВИ</option>
+					<option value="ПОИБМС">ПОИБМС</option>
+				</select> 
+				</p>
+				
+					<b>Курс:</b>
+					<input type="radio" name="k" value="1"><label>1</label>
+					<input type="radio" name="k" value="2"><label>2</label>
+					<input type="radio" name="k" value="3"><label>3</label>
+                    <input type="radio" name="k" value="4"><label>4</label>
+</p>
+
+<div > 
+				<b>Предметы: </b>
+<input  type="checkbox" name="OIT" value="ОИТ"><label for="OIT">ОИТ</label>
+<input  type="checkbox" name="OAIP" value="ОАиП"><label for="OAIP">ОАиП</label>			
+<input  type="checkbox" name="ALOCVM" value="АЛОЦВМ"><label for="ALOCVM">АЛОЦВМ</label>			
+<input  type="checkbox" name="PHYSIC" value="ФИЗИКА"><label for="PHYSIC">ФИЗИКА</label>	
+<input  type="checkbox" name="MATH" value="МАТЕМАТИКА"><label for="MATH">МАТЕМАТИКА</label><br>
+</div>
+<br>
+<div>
+ <input type="submit"  value="Подтвердить">
+</div>
+
+<div> 
+<input type="reset" VALUE="Обновить">
+</div>
+
+<div > 
+<input type="button" value="Напечатать" onclick="pr()"><br>
+</div>
+</div>
+</form>
+
+  	<div class="image-effect-fall-back">
+
+		<div class="share-layer">
+
+			<a href="#" class="share-button share-via-facebook">
+				<i class="fa fa-facebook"></i>
+				Facebook
+			</a>
+
+			<a href="#" class="share-button share-via-twitter">
+				<i class="fa fa-twitter"></i>
+				Twitter
+			</a>
+
+			<a href="#" class="share-button share-via-google">
+				<i class="fa fa-google"></i>
+				Google +
+			</a>
+
 		</div>
+
+		<div class="image-layer">
+			<img src="8.jpg" alt="">
+		</div>
+
 	</div>
-  </div>
-	
-		
-  <div class="container-fluid"> <!--главный div(Grid)-->
-    <div class="ff">
-      <ul id="ffid"> 
-          <li ><img src="hm1.gif" class="img-responsive" alt="hm1" width="230" height="230"><p style="background: rgba(0,0,0,0.4); color: white; font-size: 17px;">Синтвейв (англ. Synthwave), также известный под названиями Ретровейв (англ. Retrowave), Futuresynth или Outrun (в честь эстетики одноимённой игры)[1] — стиль электронной музыки, появившийся в середине 2000-х годов в США</p>
-          </li>
-	<!--	  <li>
-			<div class="page-wrap">
-				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="http://www.youtube.com/embed/9K7rmxjk5RQ"></iframe>
-				</div>
-			</div>		  
-		  </li>    -->
-          <li><img src="hm2.gif" alt="hm2" class="img-responsive" width="230" height="230">
-              <div style="background: rgba(0,0,0,0.4); color: white; font-size: 17px;">С музыкальной точки зрения синтвейв вдохновлён нью вейвом, а также саундтреками многих фильмов, видеоигр и телевизионных шоу 1980-х годов[5][6][7]. В качестве источника вдохновения упоминают таких композиторов, как Джон Карпентер и Вангелис, группу Tangerine Dream[2][8]. Этот стиль преимущественно инструментальный и использует в звучании характерные элементы электронной музыки 1980-х, электронные барабаны, «gated reverb (англ.)русск.», мелодии и бас-партии, сыгранные на аналоговых синтезаторах. Всё делается для достижения сходства с электронной музыкой тех лет[8]. Несмотря на это, синтвейв-продюсеры также используют современные техники создания электронной музыки, такие как сайдчейн-компрессия, и обычно выводят бас-барабан и бас-партию на передний план, что свойственно современной электронной музыке (например, электро-хаусу).
-
-С эстетической точки зрения синтвейв разворачивается в ретрофутуристической перспективе, воссоздавая дух научной фантастики, боевиков, фильмов ужасов, футуристических видеоигр-гонок 1980-х[9]. Отмечается его родственность с киберпанком. Синтвейв выражает ностальгию по культуре 1980-х, пытается уловить атмосферу тех лет и погрузить в неё[6][10][11].</div>
-          </li>
-        <li><img src="hm3.gif" alt="hm3" class="img-circle" width="230" height="230">
-              <div style="background: rgba(0,0,0,0.4); color: white; font-size: 17px;">Киберпространство (англ. cyberspace) — метафорическая абстракция, используемая в философии и в компьютерных технологиях, является (виртуальной) реальностью, которая представляет Ноосферу [1]. Второй мир как «внутри» компьютеров, так и «внутри» компьютерных сетей.</div>
-          </li>
-          <li><img src="hm4.gif" alt="hm4" class="img-circle" width="230" height="230">
-              <div style="background: rgba(0,0,0,0.4); color: white; font-size: 17px;">Киберпространство не следует путать с реальным Интернетом. Этот термин часто используют для описания объектов, широко распространённых в компьютерной сети; например, веб-сайт может быть метафорически описан как «находящийся в киберпространстве». Используя такую интерпретацию, можно сказать, что интернет-события не происходят в странах или городах, в которых физически находятся серверы или участники, а происходят в киберпространстве. Это станет разумным взглядом на вещи в тот момент, когда распределённые сервисы станут широко использоваться, когда личность и местоположение участников сети будет невозможно определить из-за анонимной или псевдоанонимной связи. Станет невозможно применять законы каждого штата и каждой страны в киберпространстве.
-
-Кроме того, что обычные люди уже не так критично относятся к фантастике, которая постепенно начинает входить в нашу жизнь, успех метафоры «киберпространство» в большей части заключён в разделении профессии «Компьютерный программист» на мелкие части.</div>
-          </li>
-      </ul>
-  </div>
-  </div>
-  
   
  
   
