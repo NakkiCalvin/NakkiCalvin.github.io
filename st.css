@@ -32,7 +32,7 @@ opacity: 0.9;
 
 body { 
 	padding-top: 51px; 
-	background-image: url(bcgrblur.jpg);
+	background-image: url(bcgrblur1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -101,7 +101,7 @@ div { display: block;}
  
 @media screen and (max-width: 767px) {
 			body {
-			    background-image: url(curls.png);   
+			    background-image: url(curls1.png);   
 			
 			/*	background: rgb(0,0,0);   */
 				background-position: center center;
