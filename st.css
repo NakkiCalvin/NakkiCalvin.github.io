@@ -55,7 +55,6 @@ li {
    list-style-type: none; /* Убираем маркеры */
 }
 
-   
 .affix {
     top: 0;
     width: 100%;
@@ -153,7 +152,5 @@ div { display: block;}
 		
 }
 
-	
 @font-face {font-family: DJGROSS; src: url(DJGROSS.ttf);}
 @font-face {font-family: Lazer84; src: url(Lazer84.ttf);}
-
