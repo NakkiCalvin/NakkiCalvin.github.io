@@ -32,7 +32,7 @@ opacity: 0.9;
 
 body { 
 	padding-top: 51px; 
-	background-image: url(bcgrblur1.jpg);
+	background-image: url(bcgr.jpg);
     background-position: center center;
     background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -65,8 +65,9 @@ li {
 }
 
 #bglogo {
-	background: rgba(0,0,0,0.8);
+	background: rgba(0,0,0,0.9);
 	color: black;
+	
 }
 
 .forlines {
@@ -99,10 +100,30 @@ div { display: block;}
    
 }
  
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
+	.carousel-caption {
+	opacity: 0;
+}
+	
+	.carousel {
+    border-radius: 5px 5px 5px 5px;
+    border-width: medium;
+    overflow: hidden;
+    border-color: rgba(186,85,211,0.4);
+}
+	
+	
+			p { font-size: 15px;}
+	
+	
+			.forinfoscript {
+				
+				width: 20%;
+			}
+			
 			body {
 			    background-image: url(curls1.png);   
-			
+			padding-top: 57px;
 			/*	background: rgb(0,0,0);   */
 				background-position: center center;
 				background-repeat: no-repeat;
