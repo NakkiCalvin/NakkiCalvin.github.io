@@ -97,8 +97,12 @@ div { display: block;}
 	border-width: thick;
     overflow: hidden;
 	border-color: rgba(186,85,211,0.4);
-   
+    margin: 0;
+	
 }
+
+
+
  
 @media screen and (max-width: 480px) {
 	.carousel-caption {
@@ -111,6 +115,8 @@ div { display: block;}
     overflow: hidden;
     border-color: rgba(186,85,211,0.4);
 }
+
+
 	
 	
 			p { font-size: 15px;}
