@@ -40,6 +40,20 @@ body {
 	font-family: Lazer84;
 }
 
+/* Chrome, Safari */
+::-webkit-scrollbar {
+width: 15px;
+height: 15px;
+}
+::-webkit-scrollbar-track-piece  {
+background-color: rgba(147,112,219,0.5);
+}
+::-webkit-scrollbar-thumb:vertical {
+height: 30px;
+background-color: rgba(255,0,255,0.5);
+}
+
+
 blockquote {font-family: Arial;}
 
 .ff {
@@ -117,7 +131,11 @@ div { display: block;}
 }
 
 
+	#bglogo {
+	background: rgba(0,0,0,0.4);
+	color: black;
 	
+}
 	
 			p { font-size: 15px;}
 	
@@ -128,7 +146,7 @@ div { display: block;}
 			}
 			
 			body {
-			    background-image: url(curls1.png);   
+			    background-image: url(phone1.jpg);   
 			padding-top: 57px;
 			/*	background: rgb(0,0,0);   */
 				background-position: center center;
