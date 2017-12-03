@@ -118,18 +118,18 @@
 
 function pr()
     {
-	  var ansver = "NEVIBRANO NICHEGO!!!!";
+	  var ansver = "nothing in input box";
       var szElement="";
-      szElement="Cтудент: " + first.text2.value + " " + first.text3.value + ". Cпециальность: " + first.spec.value + ". Курс: " + first.k.value;  
-	  var subj = ". Предметы: ";
+      szElement="Персона: " + first.text2.value + " " + first.text3.value + ". Cпециальность: " + first.spec.value + ". Стаж: " + first.k.value;  
+	  var subj = ". Предпочтения: ";
   
-   if(document.first.OIT.checked == false && document.first.OAIP.checked == false && document.first.OAIP.checked == false && document.first.ALOCVM.checked == false && document.first.PHYSIC.checked == false && document.first.MATH.checked == false ) { alert(ansver); }
+   if(document.first.MUSIC.checked == false && document.first.FILM.checked == false && document.first.WALK.checked == false && document.first.GAME.checked == false && document.first.SPORT.checked == false) { alert(ansver); }
    else {
-   if(document.first.OIT.checked == true){subj += " ОИТ; "}
-   if(document.first.OAIP.checked == true){subj += " ОАИП; "}
-   if(document.first.ALOCVM.checked == true){subj += " АЛОЦВМ; "}
-   if(document.first.PHYSIC.checked == true){subj += " ФИЗИКА; "}
-   if(document.first.MATH.checked == true){subj += " МАТЕМАТИКА; "}
+   if(document.first.MUSIC.checked == true){subj += " Музыка; "}
+   if(document.first.FILM.checked == true){subj += " Фильмы; "}
+   if(document.first.WALK.checked == true){subj += " Прогулки; "}
+   if(document.first.GAME.checked == true){subj += " Игры; "}
+   if(document.first.SPORT.checked == true){subj += " Спорт; "}
 	
   alert(szElement+subj);  
 }
@@ -159,7 +159,7 @@ function pr()
 			<ul class="nav navbar-nav">
 				<li><a href="index.html">Home</a></li>
 		<!--	<li><a href="#">Games</a></li> -->
-				<li class="active"><a href="index1.html">FAQ</a></li>
+				<li class="active"><a href="index1.html">INFO</a></li>
 				<!-- drop down -->
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Catigories <span class="caret"></span></a>
@@ -188,26 +188,26 @@ function pr()
 </div>  
   
  <!-- ROWS -->
-  <div align="center" style="margin: 100px; background: rgba(0,0,0,0.7);">
+  <div align="center" style="margin: 50px; background: rgba(0,0,0,0.7); color: rgb(220, 220, 220); font-family: Arial;">
 <form name="first" onsubmit="alert('Данные отправлены');return false">
 
-<textarea>Факультет Инормационных Технологий</textarea><p>
+<textarea style="background-color: black;">Форма для участия в розыгрыше</textarea><p>
 
-<input type="text" name="text2" value="Фамилия" />
+<input style="background-color: black;" type="text" name="text2" value="Фамилия" />
 
-<p><input type="text" name="text3" value="Имя" /></p>
+<p><input style="background-color: black;" type="text" name="text3" value="Имя" /></p>
 				
 				<p> 
 				<b> Специальность: </b> 
-				<select name="spec">
-					<option value="ПОИТ">ПОИТ</option>
-					<option value="ИСиТ">ИСиТ</option>
-					<option value="ДЭВИ">ДЭВИ</option>
-					<option value="ПОИБМС">ПОИБМС</option>
+				<select style="background-color: rgb(255, 105, 180);" name="spec">
+					<option value="Программист">Программист</option>
+					<option value="Рабочий">Рабочий</option>
+					<option value="Музыкант">Музыкант</option>
+					<option value="Повар">Повар</option>
 				</select> 
 				</p>
 				
-					<b>Курс:</b>
+					<b>Стаж:</b>
 					<input type="radio" name="k" value="1"><label>1</label>
 					<input type="radio" name="k" value="2"><label>2</label>
 					<input type="radio" name="k" value="3"><label>3</label>
@@ -215,27 +215,28 @@ function pr()
 </p>
 
 <div > 
-				<b>Предметы: </b>
-<input  type="checkbox" name="OIT" value="ОИТ"><label for="OIT">ОИТ</label>
-<input  type="checkbox" name="OAIP" value="ОАиП"><label for="OAIP">ОАиП</label>			
-<input  type="checkbox" name="ALOCVM" value="АЛОЦВМ"><label for="ALOCVM">АЛОЦВМ</label>			
-<input  type="checkbox" name="PHYSIC" value="ФИЗИКА"><label for="PHYSIC">ФИЗИКА</label>	
-<input  type="checkbox" name="MATH" value="МАТЕМАТИКА"><label for="MATH">МАТЕМАТИКА</label><br>
+				<b>Выберете направление которое вам по душе: </b>
+<input  type="checkbox" name="MUSIC" value="Музыка"><label for="MUSIC">Музыка</label>
+<input  type="checkbox" name="FILM" value="Фильмы"><label for="FILM">Фильмы</label>			
+<input  type="checkbox" name="WALK" value="Прогулка"><label for="WALK">Прогулки</label>			
+<input  type="checkbox" name="GAME" value="ИГРЫ"><label for="GAME">Игры</label>	
+<input  type="checkbox" name="SPORT" value="СПОРТ"><label for="SPORT">Спорт</label><br>
 </div>
 <br>
 <div>
- <input type="submit"  value="Подтвердить">
+ <input style="background-color: rgb(107, 142, 35);" type="submit"  value="Подтвердить">
 </div>
 
 <div> 
-<input type="reset" VALUE="Обновить">
+<input style="background-color: rgb(0, 206, 209);" type="reset" VALUE="Обновить">
 </div>
 
 <div > 
-<input type="button" value="Напечатать" onclick="pr()"><br>
+<input style="background-color: rgb(205, 92, 92);"  type="button" value="Напечатать" onclick="pr()"><br>
 </div>
 </div>
 </form>
+
 
   	<div class="image-effect-fall-back">
 
@@ -264,7 +265,7 @@ function pr()
 
 	</div>
 
-<div class="container-fluid">
+<div class="container-fluid" style="padding-top: 40px;">
 <div align="center"><a class="notes" href="list.xml">list</a></div>
 </div>
 
