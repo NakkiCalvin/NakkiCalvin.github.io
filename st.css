@@ -3,8 +3,8 @@
     margin-left: 80px auto;
 }
 
-.navbar.navbar-inverse.navbar-fixed-top { 
-opacity: 0.9; 
+.navbar.navbar-inverse.navbar-fixed-top {
+opacity: 0.9;
 }
 
 .nav.navbar-nav li a {
@@ -30,8 +30,8 @@ opacity: 0.9;
 .dropdown .active a { background-color: rgba(160,32,240,0.5);}
 .dropdown .active a:hover { background-color: white;}
 
-body { 
-	padding-top: 51px; 
+body {
+	padding-top: 51px;
 	background-image: url(bcgr.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -81,7 +81,7 @@ li {
 #bglogo {
 	background: rgba(0,0,0,0.9);
 	color: black;
-	
+
 }
 
 .forlines {
@@ -112,25 +112,26 @@ div { display: block;}
     overflow: hidden;
 	border-color: rgba(186,85,211,0.4);
     margin: 0;
-	
+
 }
 
 video {
 	width: 500px;
 	height: 300px;
 }
- 
+
 @media screen and (max-width: 480px) {
+
 
 video {
 	width: 100%;
 	height: 210px;
 }
-	
+
 	.carousel-caption {
 	opacity: 0;
 }
-	
+
 	.carousel {
     border-radius: 5px 5px 5px 5px;
     border-width: medium;
@@ -142,19 +143,19 @@ video {
 	#bglogo {
 	background: rgba(0,0,0,0.4);
 	color: black;
-	
+
 }
-	
+
 			p { font-size: 15px;}
-	
-	
+
+
 			.forinfoscript {
-				
+
 				width: 20%;
 			}
-			
+
 			body {
-			    background-image: url(phone1.jpg);   
+			    background-image: url(phone1.jpg);
 			padding-top: 57px;
 			/*	background: rgb(0,0,0);   */
 				background-position: center center;
@@ -202,21 +203,22 @@ video {
     border-radius: 5px;
     margin: 75px 10px;
 }
-		
+
 }
 
-.div1{    
+.div1{
     width: 50%;
     min-height: 150px;
     background: rgba(0,0,0,0.7);
     float: left;
 }
-.div2{    
+.div2{
     width: 50%;
     min-height: 150px;
     background: rgba(0,0,0,0.7);
 	float: right;
 }
+
 
 @font-face {font-family: DJGROSS; src: url(DJGROSS.ttf);}
 @font-face {font-family: Lazer84; src: url(Lazer84.ttf);}
